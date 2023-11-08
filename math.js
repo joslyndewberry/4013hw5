@@ -1,7 +1,9 @@
 function Valid(val1, val2) {
-  let messages [];
   if (isNaN(val1) || isNaN(val2)) {
-    messages.push('Enter Valid Numbers');
+    return false;
+  }
+  else {
+    return true;
   }
 }
 
@@ -9,11 +11,13 @@ function Add() {
   let val1 = document.getElementById('num1').value;
   let val2 = document.getElementById('num2').value;
 
-  Valid(val1, val2);
-
+  if (Valid(val1, val2)) {
   let sum = Number(val1) + Number(val2);
-  
   document.getElementById('userTextOutput').innerHTML = sum;
+  }
+  else {
+    document.getElementById('userTextOutput').innerHTML = "Enter Valid Numbers";
+  }
 }
 
 function Subtract() {
