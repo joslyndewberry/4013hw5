@@ -22,7 +22,7 @@
           <a class="nav-link active" aria-current="page" href="/">Calculate</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="add.html">Add</a>
+          <a class="nav-link" href="add.php">Add</a>
         </li>
            <li class="nav-item">
           <a class="nav-link" href="subtract.php">Subtract</a>
