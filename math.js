@@ -1,3 +1,13 @@
+form.addEventListener('Add', (e) => {
+  let val1 = document.getElementById('num1').value;
+  let val2 = document.getElementById('num2').value;
+  
+  let messages []
+  if (isNaN(Number(val1)) {
+    messages.push('Please Enter a Valid Number')
+  }
+}
+
 function Add() {
   let val1 = document.getElementById('num1').value;
   let val2 = document.getElementById('num2').value;
