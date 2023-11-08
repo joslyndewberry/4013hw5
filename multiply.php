@@ -1,6 +1,6 @@
 <?php
 
-$pageTitle = "Add";
+$pageTitle = "Multiply";
 include "view-header.php";
 
 include "view-multiply.php";
