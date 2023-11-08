@@ -8,7 +8,8 @@ include "add.js";
     <input type="text" id="num1">
     <input type="text" id="num2">
     <br>
-    <button onclick="Add()>Call Function</button>
+    <button onclick="Add()>Add</button>
+    <p id="userTextOutput"></p>
 
 <?php
 include "view-footer.php"
