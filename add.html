@@ -1,17 +1,14 @@
-<?php
-
-$pageTitle = "Add";
-include "view-header.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add</title>
     <script src="add.js"></script>
+    <?php
+        include "view-header.php";
+    ?>
 </head>
 <body>
     <p id="output"></p>
@@ -20,8 +17,8 @@ include "view-header.php";
     <br>
     <button onclick="add(num1, num2)">Add</button>
 </body>
-</html>
-
 <?php
 include "view-footer.php"
 ?>
+    
+</html>
