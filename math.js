@@ -24,31 +24,37 @@ function Subtract() {
   let val1 = document.getElementById('num1').value;
   let val2 = document.getElementById('num2').value;
 
-  Valid(val1, val2);
-
-  let diff = Number(val1) - Number(val2);
-  
-  document.getElementById('userTextOutput').innerHTML = diff;
+  if (Valid(val1, val2)) {
+    let diff = Number(val1) - Number(val2);
+    document.getElementById('userTextOutput').innerHTML = diff;
+  }
+  else {
+    document.getElementById('userTextOutput').innerHTML = "Enter Valid Numbers";
+  }
 }
 
 function Multiply() {
   let val1 = document.getElementById('num1').value;
   let val2 = document.getElementById('num2').value;
   
-  Valid(val1, val2);
-
-  let num = Number(val1) * Number(val2);
-  
-  document.getElementById('userTextOutput').innerHTML = num;
+  if (Valid(val1, val2)) {
+     let num = Number(val1) * Number(val2);
+     document.getElementById('userTextOutput').innerHTML = num;
+  }
+  else {
+     document.getElementById('userTextOutput').innerHTML = "Enter Valid Numbers";
+  }
 }
 
 function Divide() {
   let val1 = document.getElementById('num1').value;
   let val2 = document.getElementById('num2').value;
 
-  Valid(val1, val2);
-
-  let division = Number(val1) / Number(val2);
-  
-  document.getElementById('userTextOutput').innerHTML = division;
+  if (Valid(val1, val2)) {
+    let division = Number(val1) / Number(val2);
+    document.getElementById('userTextOutput').innerHTML = division;
+  }
+  else {
+    document.getElementById('userTextOutput').innerHTML = "Enter Valid Numbers";
+  }
 }
