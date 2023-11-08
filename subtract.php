@@ -1,6 +1,6 @@
 <?php
 
-$pageTitle = "Add";
+$pageTitle = "Subtract";
 include "view-header.php";
 
 include "view-subtract.php";
