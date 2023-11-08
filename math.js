@@ -1,16 +1,15 @@
-form.addEventListener('Add', (e) => {
-  let val1 = document.getElementById('num1').value;
-  let val2 = document.getElementById('num2').value;
-  
-  let messages []
-  if (isNaN(Number(val1)) {
-    messages.push('Please Enter a Valid Number')
+function Valid(val1, val2) {
+  let messages [];
+  if (isNaN(val1) || isNaN(val2)) {
+    messages.push('Enter Valid Numbers');
   }
 }
 
 function Add() {
   let val1 = document.getElementById('num1').value;
   let val2 = document.getElementById('num2').value;
+
+  Valid(val1, val2);
 
   let sum = Number(val1) + Number(val2);
   
@@ -21,6 +20,8 @@ function Subtract() {
   let val1 = document.getElementById('num1').value;
   let val2 = document.getElementById('num2').value;
 
+  Valid(val1, val2);
+
   let diff = Number(val1) - Number(val2);
   
   document.getElementById('userTextOutput').innerHTML = diff;
@@ -29,6 +30,8 @@ function Subtract() {
 function Multiply() {
   let val1 = document.getElementById('num1').value;
   let val2 = document.getElementById('num2').value;
+  
+  Valid(val1, val2);
 
   let num = Number(val1) * Number(val2);
   
@@ -38,6 +41,8 @@ function Multiply() {
 function Divide() {
   let val1 = document.getElementById('num1').value;
   let val2 = document.getElementById('num2').value;
+
+  Valid(val1, val2);
 
   let division = Number(val1) / Number(val2);
   
